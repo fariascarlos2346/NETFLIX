@@ -4,28 +4,34 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
    <title>Site Netflix</title>
 </head>
 <body>
-   <div>
-      <img src="./img/logonet.jpg" alt="logo da netflix">
-      <button>Entrar</button>
-   
-      <h1>Filmes,Séries e muito mais. Sem limites.</h1>
-      <p>Assita onde quiser. Cancele quando quiser.</p>
-      <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
-   
-      <input placeholder="Email">
-   
-      <button>Vamos lá<img src="./img/seta.jpg" alt="seta"></button>
+   <div id="container">
+      <div id="cabecalho">
+         <img id="logo-netflix" src="./img/logonet.jpg" alt="logo da netflix">
+         <button id="botao-entrar">Entrar</button>
+      </div>
+
+      <div>
+         <h1>Filmes,Séries e muito mais. Sem limites.</h1>
+         <p id="paragrafo-assista">Assita onde quiser. Cancele quando quiser.</p>
+         <p id="paragrafo-pronto">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+         <div id="formulario">
+            <input placeholder="Email">
+            <button id="botao-email">Vamos lá  <img id="seta" src="./img/seta.jpg" alt="seta"></button>
+         </div>
+      </div>
    </div>
 
-   <div>
+   <div id="rodape">
       <h2>Perguntas frequentes</h2>
-      <button>O que é a Netflix <img src="./img/x.jpg"></button>
-      <div>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aliquid assumenda architecto a, porro dolores delectus accusamus. Tempore, consequatur sint vitae voluptate vel nam illum sunt neque repellat quam amet!</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, magni dolore corrupti ipsum tempore animi eaque, dolores architecto incidunt et cum similique perspiciatis necessitatibus, aspernatur recusandae quae ipsam. Praesentium, quas.</p>
+      <button id="botao-pergunta">O que é a Netflix? <img id="xis" src="./img/x.jpg"></button>
+      <div id="pergunta"> 
+         <p class="paragrafo-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aliquid assumenda architecto a, porro dolores delectus accusamus. Tempore, consequatur sint vitae voluptate vel nam illum sunt neque repellat quam amet!</p>
+         <br>
+         <p class="paragrafo-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, magni dolore corrupti ipsum tempore animi eaque, dolores architecto incidunt et cum similique perspiciatis necessitatibus, aspernatur recusandae quae ipsam. Praesentium, quas.</p>
       </div>
    </div>
 
