@@ -20,21 +20,41 @@
          <p id="paragrafo-pronto">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
          <div id="formulario">
             <input placeholder="Email">
-            <button id="botao-email">Vamos lá  <img id="seta" src="./img/seta.jpg" alt="seta"></button>
+            <button id="botao-email">Vamos lá ></button>
          </div>
       </div>
    </div>
 
    <div id="rodape">
       <h2>Perguntas frequentes</h2>
-      <button id="botao-pergunta">O que é a Netflix? <img id="xis" src="./img/x.jpg"></button>
+      <button id="botao-pergunta">O que é a Netflix ? <img id="image-x" src="./img/logoX.png"></button>
       <div id="pergunta"> 
-         <p class="paragrafo-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aliquid assumenda architecto a, porro dolores delectus accusamus. Tempore, consequatur sint vitae voluptate vel nam illum sunt neque repellat quam amet!</p>
+         <p class="paragrafo-pergunta">A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentarios em milhares de aparelhos conectados à internet.</p>
          <br>
-         <p class="paragrafo-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, magni dolore corrupti ipsum tempore animi eaque, dolores architecto incidunt et cum similique perspiciatis necessitatibus, aspernatur recusandae quae ipsam. Praesentium, quas.</p>
+         <p class="paragrafo-pergunta">Você pode assistir a quantos filmes e séries quiser,quando e onde quiser, sem comerciais - tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
       </div>
    </div>
 
-
 </body>
+
+<script>
+   let botao = document.getElementById("botao-pergunta")
+   let menu = document.getElementById("pergunta")
+   let imagem = document.getElementById("imagem-pergunta")
+
+   function botaoxis(){
+      
+      if(menu.style.display == "none") {
+         menu.style.display = "block"
+         imagem.id = "imagem-pergunta-girar"
+      } else {
+         menu.style.display = "none"
+         imagem.id = "imagem-pergunta"
+      }
+   }
+
+   botao.addEventListener("click", botaoxis)
+   
+</script>
+
 </html>
